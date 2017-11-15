@@ -3,6 +3,7 @@ const chalk = require('chalk')
 // Config
 const isLabel = false
 const isEmo = true
+const suffixes = ['']
 
 // Target
 const methods = ['log', 'info', 'warn', 'error']
@@ -43,7 +44,7 @@ methods.forEach(method => {
       [chalk.gray(process.pid), '|', chalk.gray(`${(process.memoryUsage().rss / 1048576).toFixed(2)}MB`), '|']
         .concat(isLabel ? decorateText[method] : [])
         .concat(isEmo ? decorateEmo[method] : [])
-        .concat([' :'])
+        .concat(suffixes)
         .concat(colorize(method, [...arguments]))
     )
   }

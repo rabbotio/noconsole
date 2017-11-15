@@ -1,6 +1,6 @@
 {
   "name": "@rabbotio/noconsole",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Not only console, it's also awesome!",
   "main": "index.js",
   "scripts": {
