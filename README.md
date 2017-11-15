@@ -1,0 +1,2 @@
+# noconsole
+Not only console
