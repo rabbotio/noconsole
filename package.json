@@ -1,0 +1,28 @@
+{
+  "name": "@rabbotio/noconsole",
+  "version": "1.0.0",
+  "description": "Not only console, it's also awesome!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "release": "npm publish --access=public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabbotio/noconsole.git"
+  },
+  "author": "katopz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rabbotio/noconsole/issues"
+  },
+  "homepage": "https://github.com/rabbotio/noconsole#readme",
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0"
+  }
+}
