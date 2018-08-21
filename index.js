@@ -39,7 +39,7 @@ let _console = {}
 methods.forEach(method => {
   _console[method] = console[method]
   console[method] = function () {
-    _console.log.apply(
+    _console[method].apply(
       _console,
       [chalk.gray(process.pid), '|', chalk.gray(`${(process.memoryUsage().rss / 1048576).toFixed(2)}MB`), '|']
         .concat(isLabel ? decorateText[method] : [])
