@@ -20,7 +20,7 @@
   "homepage": "https://github.com/rabbotio/noconsole#readme",
   "devDependencies": {
     "jest": "^21.2.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.18.3"
   },
   "dependencies": {
     "chalk": "^2.3.0"
